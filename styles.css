@@ -1,0 +1,305 @@
+/* Style Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Général */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* ajout */
+    color: #333;
+    background-color: #fff; /* modif #f7f7f7 */
+    margin: 0; /* ajout */
+    padding: 0; /* ajout */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(10px);
+    transition: all .50s ease; */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* ajout */
+    /* text-decoration: none; */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    /* margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.nav-links li a:hover {
+    color: #b8997d;
+}
+
+/* Styles du Burger Menu */
+.burger-toggle {
+    display: none;
+}
+
+.burger {
+    display: none; /* caché sur écrans larges */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none; /* caché par défaut sur petits écrans */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px; /* modif 0 */
+        width: 200px; /* modif 100% */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ajout */
+        border-radius: 8px; /* ajout */
+        padding: 10px; /* ajout */
+    }
+
+    .nav-links.active {
+        display: flex; /* affiche le menu lorsqu'il est actif */
+    }
+    /* ajout */
+    .nav-links li {
+        margin: 10px 0; /* ajout */
+    }
+}
+
+.logo{
+    font-size: 20px;
+    color: bisque;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: #f8f6f4;
+    text-shadow: 0 0 25px #f8f6f4, 0 0 50px #fff;
+    transform: scale(1.1);
+}
+span{
+    color: #333;
+    text-decoration: none;
+}
+.logo a {
+    color: #e0d6cc;
+    text-decoration: none;
+}
+
+.navbar a{
+    display: inline-flex;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.navbar a:hover{
+    color: #b8997d;
+    transform: translateY(5px);
+}
+
+h1, h2, h3 {
+    color: #4a4a4a;
+    margin-bottom: 20px; /* ajout */
+    font-weight: bold; /* ajout */
+}
+/* ajout */
+h2, h3 {
+    display: flex; /* ajout */
+    justify-content: center; /* ajout */
+}
+
+p {
+    margin-bottom: 20px; /* ajout */
+    line-height: 1.6; /* ajout */
+}
+
+/* Section présentation */
+.section {
+    padding: 40px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 20px; /* ajout */
+    padding: 20px; /* ajout */
+    border-radius: 10px; /* ajout */
+    background-color: #f8f6f4; /* ajout */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ajout */
+}
+
+.about-content .text {
+    max-width: 60%; /* modif 50% */
+}
+
+.about-content .photo img {
+    max-width: 250px; /* modif 300 essayer 195 */
+    border-radius: 10px;
+    border: 3px solid #e0d6cc; /* ajout */
+}
+
+/* Projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 20px; /* ajout */
+    padding: 20px; /* ajout */
+}
+
+.project-card {
+    background: #f8f6f4; /* modif #f7f7f7 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* modif 0 2px 5px */
+    transition: transform 0.3s, box-shadow 0.3s; /* ajout */
+}
+/* ajout */
+.project-card:hover {
+    transform: translateY(-5px); /* ajout */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* ajout */
+}
+/* ajout */
+.project-card h3 {
+    color: #b8997d; /* ajout */
+}
+/* ajout */
+/* Section pourquoi moi ? */
+.skills ul {
+    list-style: none; /* ajout */
+    padding: 0; /* ajout */
+}
+/* ajout */
+.skills li {
+    margin: 10px 0; /* ajout */
+    font-weight: bold; /* ajout */
+}
+
+/* Section contact */
+.section-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* modif 10 */
+    max-width: 500px; /* ajout */
+    margin: auto; /* ajout */
+    padding: 20px; /* ajout */
+    background-color: #f8f6f4; /* ajout */
+    border-radius: 10px; /* ajout */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ajout */
+}
+/* ajout */
+.section-contact form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+/* ajout */
+.section-contact input, .section-contact textarea {
+    width: 100%; /* ajout */
+    padding: 10px; /* ajout */
+    border: 1px solid #e0d6cc; /* ajout */
+    border-radius: 5px; /* ajout */
+    font-size: 16px; /* ajout */
+}
+
+.section-contact button {
+    background-color: #b8997d; /* modif juste backgrd #4a4a4a */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* modif juste backgrd */
+    font-size: 16px; /* ajout */
+}
+
+.section-contact button:hover {
+    background-color: #4a4a4a; /* modif juste bckgrd #b8997d */
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* ajout de color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .socials a {
+    color: #b8997d;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* ajout */
+.footer .socials a:hover {
+    color: #fff; /* ajout */
+}
+/* ajout */
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content .text {
+        max-width: 100%;
+    }
+
+    .about-content .photo img {
+        margin-top: 20px;
+    }
+}

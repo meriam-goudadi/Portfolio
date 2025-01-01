@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Goudadi Mériam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Navigation -->
+     <header class="header">
+        <div class="logo">
+            <a href="#"><span>Port</span>folio</a>
+        </div>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle"/>
+        <label for="burger-toggle" class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">Présentation</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#why-me">Pourquoi moi ?</a></li>
+                <li><a href="#contact">Contacter</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- Présentation -->
+      <main>
+        <section id="about" class="section-about">
+            <div class="about-content">
+                <div class="text">
+                    <h1>Bienvenue sur mon portfolio, je suis Mériam Goudadi</h1>
+                    <p>Community manager free-lance, modèle, créatrice de contenus et ancienne Responsable de boutique Retail.
+                        Je n'ai pas peur des challenges, aujourd'hui, je suis une jeune développeuse web et mobile à la recherche
+                        d'une belle opportunité d'alternance.</p>
+                        <a href="CV-gdi.pdf" class="btn">Télécharger CV</a>
+                </div>
+                <div class="photo">
+                    <img src="images/IMG_9074.jpg" alt="Photo de Profil">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+         <section id="projects" class="section-projects">
+            <h2>Mes Réalisations</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Projet HTML</h3>
+                    <p>Site pour un fleuriste</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projet CSS</h3>
+                    <p>FanSite sur Eddy Murphy</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projet Python</h3>
+                    <p>Jeu TicTacToe</p>
+                </div>
+                <div class="project-card">
+                    <h3>VMware</h3>
+                    <p>Installation Ordinateur
+                        virtuels et interaction entre ceux-ci</p>
+                </div>
+            </div>
+         </section>
+
+    <!-- Pourquoi moi ? -->
+          <section id="why-me" class="section-why-me">
+            <h2>Pourquoi moi ?</h2>
+            <div class="skills">
+                <p>La créativité et la résolution de
+                    problèmes sont mes points forts.</p>
+                <ul>
+                    <li>HTML, CSS, Python</li>
+                    <li>Création de VM (Linux, Windows)</li>
+                    <li>Maitrise Figma, Canva, VS Code</li>
+                </ul>
+            </div>
+          </section>
+
+    <!-- Contact -->
+           <section id="contact" class="section-contact">
+                <h2>Contacter</h2>
+                <form action="mailto:meriam.goudadi@laplateforme.io" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Nom" required>
+                    <input type="text" name="name" placeholder="Prénom" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Téléphone" required>
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+           </section>
+      </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 GOUDADI Mériam. Tous droits réservés.</p>
+        <div class="socials">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Gmail</a>
+        </div>
+    </footer>
+
+</body>
+</html>
