@@ -227,8 +227,13 @@ p {
 .project-card h3 {
     color: #b8997d; /* ajout */
 }
-/* ajout */
+
 /* Section pourquoi moi ? */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espacement entre les éléments */
+}
 .skills ul {
     list-style: none; /* ajout */
     padding: 0; /* ajout */
