@@ -34,16 +34,6 @@ body {
 .navbar {
     display: flex;
 }
-.navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-}
-.navbar ul li {
-    display: flex;
-    justify-content: center;
-}
 
 .nav-links {
     display: flex;
@@ -103,13 +93,13 @@ body {
         border-radius: 8px; /* ajout */
         padding: 10px; /* ajout */
     }
-
-    .nav-links.active {
-        display: flex; /* affiche le menu lorsqu'il est actif */
-    }
     /* ajout */
     .nav-links li {
         margin: 10px 0; /* ajout */
+    }
+    /* ajout */
+    .burger-toggle:checked ~ .navbar .nav-links {
+        display: flex;
     }
 }
 
