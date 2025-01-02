@@ -231,14 +231,35 @@ p {
 /* Section pourquoi moi ? */
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px; /* Espacement entre les éléments */
+    margin: 40px 20px;
+    padding: 20px;
 }
 .skills ul {
+    display: flex;
+    justify-content: center;
     list-style: none; /* ajout */
-    padding: 0; /* ajout */
+    /* padding: 0; /* ajout */
+    background: #f8f6f4; /* modif #f7f7f7 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* modif 0 2px 5px */
+    transition: transform 0.3s, box-shadow 0.3s; /* ajout */
+    min-width: 250px; /* Largeur minimale de chaque élément */
+    text-align: center;
 }
-/* ajout */
+
+.skills p {
+    display: flex;
+    justify-content: center;
+    background: #f8f6f4; /* modif #f7f7f7 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* modif 0 2px 5px */
+    transition: transform 0.3s, box-shadow 0.3s; /* ajout */
+}
+
 .skills li {
     margin: 10px 0; /* ajout */
     font-weight: bold; /* ajout */
@@ -299,6 +320,9 @@ p {
     color: #b8997d;
     margin: 0 10px;
     text-decoration: none;
+}
+.footer .socials a img {
+    max-width: 50px; /* ajuste la taille des images sur les liens */
 }
 /* ajout */
 .footer .socials a:hover {
