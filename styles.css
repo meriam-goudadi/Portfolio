@@ -223,6 +223,12 @@ p {
     transform: translateY(-5px); /* ajout */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* ajout */
 }
+/* Styles pour les images des compétences */
+.project-card img {
+    width: 250px;
+    height: 175px;
+    margin-bottom: 10px;
+}
 /* ajout */
 .project-card h3 {
     color: #b8997d; /* ajout */
