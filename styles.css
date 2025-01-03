@@ -229,56 +229,43 @@ p {
 }
 
 /* Section pourquoi moi ? */
-.section-why-me {
-    display: flex;
-}
-.skills-logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Espacement entre les éléments */
-    margin: 40px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    /* margin: 40px 20px; */
     padding: 20px;
 }
-.skills ul {
-    display: grid;
-    justify-content: center;
-    list-style: none; /* ajout */
-    /* padding: 0; /* ajout */
-    background: #f8f6f4; /* modif #f7f7f7 */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* modif 0 2px 5px */
-}
-
-.skills p {
-    display: flex;
-    justify-content: center;
-    background: #f8f6f4; /* modif #f7f7f7 */
+/* Styles pour chaque compétences */
+.skill-item {
+    background: #f8f6f4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Styles pour les images des compétences */
+.skill-item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+/* Media queries pour le responsive D. */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
-.skills li {
-    /* margin: 10px 0; */
-    font-weight: bold; /* ajout */
-    display: grid;
-    margin: 40px 20px;
-    padding: 20px;
-    border-radius: 7px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* modif 0 2px 5px */
-    transition: transform 0.3s, box-shadow 0.3s; /* ajout */
-    min-width: 80px; /* Largeur minimale de chaque élément */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    }
 }
 
 /* Section contact */
