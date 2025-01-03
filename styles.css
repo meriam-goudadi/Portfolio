@@ -237,6 +237,10 @@ p {
     padding: 20px;
 }
 /* Styles pour chaque compétences */
+.section-why-me p {
+    display: flex;
+    justify-content: center;
+}
 .skill-item {
     background: #f8f6f4;
     padding: 20px;
