@@ -216,7 +216,8 @@ button:active {
     margin: 40px 20px; /* ajout */
     padding: 20px; /* ajout */
     display: flex; /* ajout */
-    animation: scroll 10s linear infinite; /* Animation de défilement */
+    animation: scroll 25s linear infinite; /* Animation de défilement */
+    cursor: pointer;
 }
 
 .project-card {
